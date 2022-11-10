@@ -29,3 +29,14 @@ public class RegistryServiceApplication {
 	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
 ```
+### step3. Configuration for client-service apllications: department-service, user-service, and other microservice
+```
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost  
+```

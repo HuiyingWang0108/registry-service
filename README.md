@@ -22,3 +22,10 @@ public class RegistryServiceApplication {
 
 }
 ```
+### step2. DI for client-service apllications: department-service, user-service, and other microservice
+```
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+```
